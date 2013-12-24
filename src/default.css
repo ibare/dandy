@@ -3,8 +3,9 @@ html, body, section, h1, h2, p {
     padding: 0;
 }
 body {
-    color: #333;
+    color: #444;
     font: 14px/1.5 "HCR Batang", SeoulHangang, "Apple SD Gothic Neo", NanumGothic, serif;
+    line-height: 1.3em;
 }
 a {
     color: inherit;
@@ -21,23 +22,37 @@ section {
 }
 h1, h2 {
     font-family: "HCR Dotum", SeoulNamsan, "Apple SD Gothic Neo", NanumGothic, sans-serif;
+    line-height: 1.5em;
 }
 article {
-    background-image: -webkit-linear-gradient(top, #eee 0, #fff 10px);
-    padding: 1em;
+    border-bottom: 1px solid #ddd;
 }
+    /* 원문 */
     article h1 {
         color: #b82647;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        font-weight: normal;
+        text-decoration: line-through;
+        margin-left: 1em;
+        margin-top: 1em;
     }
+    /* 제안문 */
     article h2 {
         color: #0b6db7;
-        font-size: 1.5em
+        font-weight: normal;
+        font-size: 2em;
+        padding-left: 0.55em;
+        border-bottom: 1px dotted #ddd;
     }
         article h2 span {
-            color: #ccc;
             margin: 0 .25em;
         }
+    article p {
+        background-color: #fafafa;
+        padding-top: -1em;
+        padding: 1em;
+    }
+
 p.error, p.passed {
     background-position: 50% 0;
     background-repeat: no-repeat;
